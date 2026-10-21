@@ -1,0 +1,18 @@
+{
+  "name": "TCE GO — Rumo aos concursos",
+  "short_name": "TCE GO",
+  "description": "Estudos e revisões para o TCE de Goiás",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#190632",
+  "theme_color": "#44108f",
+  "icons": [
+    {
+      "src": "/tce-go-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
