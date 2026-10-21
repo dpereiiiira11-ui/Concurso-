@@ -4,15 +4,14 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/>
 <meta name="theme-color" content="#173f45"/>
-<link id="rumo-favicon" rel="icon" type="image/svg+xml">
-<script>
-(function(){
- var pal={entrada:['#0b0914','#a781ff'],luxo:['#0d0e11','#c9a768'],tecnologico:['#100c1d','#ac79fa'],feminino:['#fcf6f5','#a46385'],masculino:['#101d2b','#63c6bc'],noite:['#0b1020','#8b5cf6'],rosa:['#fcf6f5','#f05fa6'],lilas:['#151021','#a78bfa'],azul:['#101d2b','#4f8cff'],verde:['#101d2b','#34d399'],coral:['#221322','#fb7185']};
- function icon(){var k=document.documentElement.dataset.theme||localStorage.getItem('rumo_tema')||'luxo',v=pal[k]||pal.luxo;var svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="'+v[0]+'"/><path d="M13 47 L32 12 L51 47" fill="none" stroke="'+v[1]+'" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 37 H42" stroke="'+v[1]+'" stroke-width="4" stroke-linecap="round"/><path d="M15 53 H49" stroke="'+v[1]+'" stroke-width="3" stroke-linecap="round"/></svg>';document.getElementById('rumo-favicon').setAttribute('href','data:image/svg+xml,'+encodeURIComponent(svg));document.querySelector('meta[name="theme-color"]').setAttribute('content',v[0]);}
- document.addEventListener('DOMContentLoaded',icon);new MutationObserver(icon).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
-})();
-</script>
-<title>RUMO TCE — TCE-GO Técnico Administrativo</title>
+<link rel="icon" type="image/svg+xml" href="/tce-go-icon.svg">
+<link rel="apple-touch-icon" href="/tce-go-icon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TCE GO">
+<meta name="theme-color" content="#44108f">
+<title>TCE GO — Rumo TCE</title>
 <meta name="description" content="Sua jornada até o TCE-GO, um passo de cada vez."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
