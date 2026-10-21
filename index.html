@@ -237,6 +237,12 @@ body:before{content:'';position:fixed;inset:0;pointer-events:none;background:rad
 @keyframes wax-run{0%{transform:translateY(-8px) scaleY(.38);opacity:.1}12%{opacity:.85}35%{transform:translateY(0) scaleY(.8);opacity:.98}70%{transform:translateY(10px) scaleY(1.3);opacity:.95}95%,100%{transform:translateY(16px) scaleY(1.55);opacity:.08}}
 @media(prefers-reduced-motion:reduce){.pretty-candle .flame-outer,.pretty-candle .flame-inner,.pretty-candle .candle-aura,.pretty-candle .wax-drip{animation-duration:5s}}
 
+/* Cera longa: escorre do topo ate quase a base com movimento lento */
+.pretty-candle .wax-drip{bottom:calc(var(--waxHeight) * .06 + 4px);height:calc(var(--waxHeight) * .92 - 4px);min-height:11px;max-height:184px;transform-origin:center top;animation:wax-stream 24s cubic-bezier(.35,.06,.62,.99) infinite alternate;transition:bottom 1.6s linear,height 1.6s linear;border-radius:5px 5px 11px 11px}
+.pretty-candle .drip-one{left:calc(50% - 35px);width:10px;animation-delay:-9s}
+.pretty-candle .drip-two{left:calc(50% + 27px);width:9px;height:calc(var(--waxHeight) * .75 - 3px);bottom:calc(var(--waxHeight) * .24 + 3px);max-height:153px;animation-duration:28s;animation-delay:-16s}
+.pretty-candle .drip-three{left:calc(50% + 6px);width:7px;height:calc(var(--waxHeight) * .59 - 3px);bottom:calc(var(--waxHeight) * .4 + 3px);max-height:121px;animation-duration:32s;animation-delay:-4s}
+@keyframes wax-stream{0%{transform:scaleY(.32);opacity:.65}24%{transform:scaleY(.56);opacity:.92}58%{transform:scaleY(.84);opacity:1}100%{transform:scaleY(1);opacity:.98}}
 /* Navegação: barra inferior inteira em celulares e menu lateral rolável */
 .side{height:100vh;height:100dvh;min-height:0;overflow:hidden}
 .side .nav{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:18px}
