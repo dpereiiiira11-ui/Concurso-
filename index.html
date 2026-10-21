@@ -86,8 +86,8 @@ import {createRoot} from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
 import {createClient} from 'https://esm.sh/@supabase/supabase-js@2.45.4';
 const html=htm.bind(React.createElement); const {useState,useEffect,useMemo,useCallback,useRef}=React;
-const SUPABASE_URL='https://zhegxckkkawzklvgxwpg.supabase.co';
-const SUPABASE_KEY='sb_publishable_NeZYE89a8Mx8yn3Ml0G46Q_qJfd7GQY';
+const SUPABASE_URL='https://nrnzmjujmhztgvjgcrxt.supabase.co';
+const SUPABASE_KEY='sb_publishable_m4sMMgQiis4B-k8j5X2U5g_plEp5a_i';
 const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
 const PALETAS=[['luxo','Luxo Executivo','Preto · cinza · dourado',['#0d0e11','#1b1c21','#c9a768']],['tecnologico','Roxo Tecnológico','Roxo · preto · neon',['#100c1d','#211735','#ac79fa']],['feminino','Feminino Elegante','Rosa antigo · creme · dourado',['#fcf6f5','#f8edf0','#a46385']],['masculino','Masculino Premium','Azul-marinho · aço · petróleo',['#101d2b','#1d3042','#63c6bc']]];
 function Paletas({theme,onChange}){return html`<div class="theme-grid">${PALETAS.map(p=>html`<button type="button" class=${'theme-card '+(theme===p[0]?'selected':'')} onClick=${()=>onChange(p[0])}><span class="theme-swatch">${p[3].map(c=>html`<i style=${{background:c}}></i>`)}</span><b>${p[1]}</b><small>${p[2]}</small></button>`)}</div>`}
