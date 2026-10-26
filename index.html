@@ -290,6 +290,23 @@ body:before{content:'';position:fixed;inset:0;pointer-events:none;background:rad
 .subject-chip.on{background:color-mix(in srgb,var(--accent) 18%,var(--card));color:var(--ink);border:1px solid var(--accent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent)}
 :root[data-theme="entrada"] .accent,:root[data-theme="tecnologico"] .accent,:root[data-theme="lilas"] .accent,:root[data-theme="noite"] .accent{background:#e5d8f7;color:#302145;border:1px solid #aa94cc}
 @media(max-width:650px){.alternativa-corrigida{flex-wrap:wrap}.alternativa-corrigida strong{margin-left:30px}.questao-corrigida{padding:18px}}
+
+/* Roxo suave de leitura confortável: evitar branco diretamente sobre fundo saturado */
+:root[data-theme="entrada"] .subject-chip.on,
+:root[data-theme="tecnologico"] .subject-chip.on,
+:root[data-theme="lilas"] .subject-chip.on,
+:root[data-theme="noite"] .subject-chip.on,
+:root[data-theme="entrada"] .dream-choice.chosen,
+:root[data-theme="tecnologico"] .dream-choice.chosen,
+:root[data-theme="lilas"] .dream-choice.chosen,
+:root[data-theme="noite"] .dream-choice.chosen{
+  background:#e7def4!important;color:#302145!important;border:1px solid #ad97d0!important;
+  box-shadow:0 0 0 2px rgba(208,190,233,.12)
+}
+:root[data-theme="entrada"] .subject-chip.on *,
+:root[data-theme="tecnologico"] .subject-chip.on *,
+:root[data-theme="lilas"] .subject-chip.on *,
+:root[data-theme="noite"] .subject-chip.on *{color:#302145!important}
 </style>
 
 </head>
